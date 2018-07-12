@@ -1,0 +1,25 @@
+<RCC>
+    <qresource prefix="/myimages">
+        <file>rose.png</file>
+        <file>lamp1.png</file>
+        <file>youtube.png</file>
+        <file>bitbug_favicon.ico</file>
+        <file>炫酷部落鹰头矢量素材.jpg</file>
+        <file>Word Processor Word.ico</file>
+        <file>Version Cue.png</file>
+        <file>m17.png</file>
+        <file>0.jpg</file>
+        <file>undo12.png</file>
+        <file>redo11.png</file>
+        <file>edit-select-all.png</file>
+        <file>magnifying39.png</file>
+        <file>zoom29.png</file>
+        <file>cut20.png</file>
+        <file>copy12.png</file>
+        <file>font-399.png</file>
+        <file>floppy1.png</file>
+        <file>plus30.png</file>
+        <file>checked_checkbox.png</file>
+        <file>floppy13.png</file>
+    </qresource>
+</RCC>

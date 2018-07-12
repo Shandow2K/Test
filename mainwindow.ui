@@ -1,0 +1,466 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>574</width>
+    <height>427</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QTextEdit" name="textEdit">
+    <property name="geometry">
+     <rect>
+      <x>3</x>
+      <y>2</y>
+      <width>571</width>
+      <height>361</height>
+     </rect>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>574</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu_F">
+    <property name="title">
+     <string>文件(F)</string>
+    </property>
+    <addaction name="action_N"/>
+    <addaction name="action_O"/>
+    <addaction name="action_S"/>
+    <addaction name="action_A"/>
+    <addaction name="separator"/>
+    <addaction name="action_U"/>
+    <addaction name="action_P"/>
+   </widget>
+   <widget class="QMenu" name="menu_E">
+    <property name="title">
+     <string>编辑(E)</string>
+    </property>
+    <addaction name="action_U_2"/>
+    <addaction name="separator"/>
+    <addaction name="action_T"/>
+    <addaction name="action_C"/>
+    <addaction name="action_P_2"/>
+    <addaction name="action_L"/>
+    <addaction name="separator"/>
+    <addaction name="action_F"/>
+    <addaction name="action_N_2"/>
+    <addaction name="action_H"/>
+    <addaction name="action_G"/>
+    <addaction name="separator"/>
+    <addaction name="action_A_2"/>
+    <addaction name="action_D"/>
+    <addaction name="action_5"/>
+    <addaction name="action_6"/>
+   </widget>
+   <widget class="QMenu" name="menu_O">
+    <property name="title">
+     <string>格式(O)</string>
+    </property>
+    <addaction name="action_W"/>
+    <addaction name="action_F_2"/>
+   </widget>
+   <widget class="QMenu" name="menu_V">
+    <property name="title">
+     <string>查看(V)</string>
+    </property>
+    <addaction name="action_S_2"/>
+   </widget>
+   <widget class="QMenu" name="menu_H">
+    <property name="title">
+     <string>帮助(H)</string>
+    </property>
+    <addaction name="action_H_2"/>
+    <addaction name="action_A_3"/>
+   </widget>
+   <addaction name="menu_F"/>
+   <addaction name="menu_E"/>
+   <addaction name="menu_O"/>
+   <addaction name="menu_V"/>
+   <addaction name="menu_H"/>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="action_S"/>
+   <addaction name="action_T"/>
+   <addaction name="action_C"/>
+   <addaction name="action_P_2"/>
+   <addaction name="action_U_2"/>
+   <addaction name="action_A_2"/>
+   <addaction name="action_N"/>
+   <addaction name="action_5"/>
+   <addaction name="action_6"/>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <action name="action_N">
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/myimages/plus30.png</normaloff>
+     <normalon>:/myimages/lamp1.png</normalon>:/myimages/plus30.png</iconset>
+   </property>
+   <property name="text">
+    <string>新建(N)</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+N</string>
+   </property>
+  </action>
+  <action name="action_O">
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/myimages/youtube.png</normaloff>:/myimages/youtube.png</iconset>
+   </property>
+   <property name="text">
+    <string>打开(O)</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+O</string>
+   </property>
+  </action>
+  <action name="action_S">
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/myimages/floppy13.png</normaloff>:/myimages/floppy13.png</iconset>
+   </property>
+   <property name="text">
+    <string>保存(S)</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+S</string>
+   </property>
+  </action>
+  <action name="action_A">
+   <property name="text">
+    <string>另存为(A)</string>
+   </property>
+  </action>
+  <action name="action_U">
+   <property name="text">
+    <string>页面设置(U)</string>
+   </property>
+  </action>
+  <action name="action_P">
+   <property name="text">
+    <string>打印(P)</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+P</string>
+   </property>
+  </action>
+  <action name="action_U_2">
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/myimages/undo12.png</normaloff>:/myimages/undo12.png</iconset>
+   </property>
+   <property name="text">
+    <string>撤销(U)</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Z</string>
+   </property>
+  </action>
+  <action name="action_T">
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/myimages/cut20.png</normaloff>:/myimages/cut20.png</iconset>
+   </property>
+   <property name="text">
+    <string>剪切(T)</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+X</string>
+   </property>
+  </action>
+  <action name="action_C">
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/myimages/copy12.png</normaloff>:/myimages/copy12.png</iconset>
+   </property>
+   <property name="text">
+    <string>复制(C)</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+C</string>
+   </property>
+  </action>
+  <action name="action_P_2">
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/myimages/font-399.png</normaloff>:/myimages/font-399.png</iconset>
+   </property>
+   <property name="text">
+    <string>粘贴(P)</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+V</string>
+   </property>
+  </action>
+  <action name="action_L">
+   <property name="text">
+    <string>删除(L)</string>
+   </property>
+   <property name="shortcut">
+    <string>Del</string>
+   </property>
+  </action>
+  <action name="action_F">
+   <property name="text">
+    <string>查找(F)</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+F</string>
+   </property>
+  </action>
+  <action name="action_N_2">
+   <property name="text">
+    <string>查找下一个(N)</string>
+   </property>
+   <property name="shortcut">
+    <string>F3</string>
+   </property>
+  </action>
+  <action name="action_H">
+   <property name="text">
+    <string>替换(H)</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+H</string>
+   </property>
+  </action>
+  <action name="action_G">
+   <property name="text">
+    <string>转到(G)</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+G</string>
+   </property>
+  </action>
+  <action name="action_A_2">
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/myimages/checked_checkbox.png</normaloff>:/myimages/checked_checkbox.png</iconset>
+   </property>
+   <property name="text">
+    <string>全选(A)</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+A</string>
+   </property>
+  </action>
+  <action name="action_D">
+   <property name="text">
+    <string>时间/日期(D)</string>
+   </property>
+   <property name="shortcut">
+    <string>F5</string>
+   </property>
+  </action>
+  <action name="action_W">
+   <property name="text">
+    <string>自动换行(W)</string>
+   </property>
+  </action>
+  <action name="action_F_2">
+   <property name="text">
+    <string>字体(F)</string>
+   </property>
+  </action>
+  <action name="action_S_2">
+   <property name="text">
+    <string>状态栏(S)</string>
+   </property>
+  </action>
+  <action name="action_H_2">
+   <property name="text">
+    <string>查看帮助(H)</string>
+   </property>
+  </action>
+  <action name="action_A_3">
+   <property name="icon">
+    <iconset>
+     <normalon>:/myimages/rose.png</normalon>
+    </iconset>
+   </property>
+   <property name="text">
+    <string>关于记事本(A)</string>
+   </property>
+  </action>
+  <action name="action_5">
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/myimages/magnifying39.png</normaloff>:/myimages/magnifying39.png</iconset>
+   </property>
+   <property name="text">
+    <string>放大</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Up</string>
+   </property>
+  </action>
+  <action name="action_6">
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/myimages/zoom29.png</normaloff>:/myimages/zoom29.png</iconset>
+   </property>
+   <property name="text">
+    <string>缩小</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Down</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="res.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>action_C</sender>
+   <signal>triggered()</signal>
+   <receiver>textEdit</receiver>
+   <slot>copy()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>288</x>
+     <y>217</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>action_P_2</sender>
+   <signal>triggered()</signal>
+   <receiver>textEdit</receiver>
+   <slot>paste()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>288</x>
+     <y>217</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>action_T</sender>
+   <signal>triggered()</signal>
+   <receiver>textEdit</receiver>
+   <slot>cut()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>288</x>
+     <y>217</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>action_A_2</sender>
+   <signal>triggered()</signal>
+   <receiver>textEdit</receiver>
+   <slot>selectAll()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>288</x>
+     <y>217</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>action_U_2</sender>
+   <signal>triggered()</signal>
+   <receiver>textEdit</receiver>
+   <slot>undo()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>288</x>
+     <y>217</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>action_N</sender>
+   <signal>triggered()</signal>
+   <receiver>textEdit</receiver>
+   <slot>clear()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>288</x>
+     <y>239</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>action_6</sender>
+   <signal>triggered()</signal>
+   <receiver>textEdit</receiver>
+   <slot>zoomOut()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>288</x>
+     <y>239</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>action_5</sender>
+   <signal>triggered()</signal>
+   <receiver>textEdit</receiver>
+   <slot>zoomIn()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>288</x>
+     <y>239</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
