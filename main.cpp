@@ -6,6 +6,6 @@ int main(int argc, char *argv[])
     QApplication a(argc, argv);
     MainWindow w;
     w.show();
-/*dadadadawd*/
+/*啦啦啦啊啊*/
     return a.exec();
 }
